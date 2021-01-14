@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('../images/bg-header-desktop.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: hsl(210, 10%, 33%);
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+}
+p {
+  color: hsl(201, 11%, 66%);
+}
+.header {
+  height: 100%;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.hero-text {
+  text-align: center;
+}
+.hero-text p {
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+}
+.hero-button {
+  text-align: center;
+  margin: 30px 0;
+}
+.hero-button a {
+  text-decoration: none;
+  background-color: hsl(171, 66%, 44%);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+/* styling section-1 */
+.section-1 {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.sect-1-text {
+  padding: 5px;
+  text-align: center;
+}
+/* end of section-1 */
+
+/* styling section-2 */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+.left-img img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+}
+.right-text {
+  text-align: left;
+  padding: 40px;
+}
+.text-1 {
+  line-height: 26px;
+  margin: 30px 0;
+  width: 350px;
+}
+.text-1 h1 {
+  padding-bottom: 10px;
+}
+/* end of section-2 */
+
+/* styliying section-3 */
+.section-3 {
+  width: 100%;
+  margin: 30px 0;
+}
+.sec-3-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sec-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* end of section-3 */
+
+/* styling section-4 */
+.section-4 {
+  width: 100%;
+}
+.sec-4-img .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.sec-4-img {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+.sec-icons .grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+.sec-icons {
+  margin-bottom: 100px;
+}
+.sec-4-buttm {
+  margin-bottom: 100px;
+}
+/* end of section 4 */
+
+/* styling footer */
+.footer {
+  padding: 10px 0;
+  background-color: hsl(0, 4%, 90%);
+}
+.footer .grid {
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-img img {
+  padding-top: 10px;
+  max-width: 10%;
+}
+.footer-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-sec-1 {
+  font-size: 14px;
+  margin: 0 10px;
+}
+.footer-sec-1 p {
+  margin: 10px 0;
+}
+.footer-link {
+  padding-top: 20px;
+}
+.footer-link a img {
+  margin: 0 10px;
+}
+/* end of footer */
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .grid,
+  .sec-4-img .grid,
+  .sec-icons .grid,
+  .footer .grid,
+  .footer-sec {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .left-img img {
+    position: relative;
+    width: 80%;
+    left: 0px;
+  }
+  .sect-1-text p{
+    text-align: center;
+    margin: 0 10px;
+
+  }
+  .sec-img img {
+    margin-top: 30px;
+    width: 100%;
+  }
+  p {
+    text-align: center;
+  }
+  .hero-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 50px;
+  }
+  .hero-text,
+  .sect-1-text,
+  .sec-3-text {
+    margin: 0 20px;
+  }
+  .right-text {
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .text-1 p {
+    margin: 0 30px;
+  }
+  .sec-4-img .grid .img {
+    margin-top: 20px;
+  }
+  .sec-icons .grid .icons {
+    margin-top: 15px;
+  }
+  .hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+}
